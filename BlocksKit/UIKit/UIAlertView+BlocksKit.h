@@ -6,6 +6,8 @@
 #import <UIKit/UIKit.h>
 #import "BKDefines.h"
 
+#ifndef BK_IS_APP_EXTENSION
+
 /** UIAlertView without delegates!
 
  This set of extensions and convenience classes allows
@@ -135,3 +137,5 @@
 @property (nonatomic, copy, setter = bk_SetShouldEnableFirstOtherButtonBlock:) BOOL (^bk_shouldEnableFirstOtherButtonBlock)(UIAlertView *alertView) BK_ALERT_CONTROLLER_DEPRECATED(5_0);
 
 @end
+
+#endif

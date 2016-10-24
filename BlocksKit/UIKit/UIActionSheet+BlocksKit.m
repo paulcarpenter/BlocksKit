@@ -8,6 +8,8 @@
 #import "NSObject+A2DynamicDelegate.h"
 #import "NSObject+A2BlockDelegate.h"
 
+#ifndef BK_IS_APP_EXTENSION
+
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
 
@@ -184,3 +186,5 @@
 @end
 
 #pragma clang diagnostic pop
+
+#endif
